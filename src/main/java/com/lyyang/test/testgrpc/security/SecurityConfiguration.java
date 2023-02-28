@@ -20,7 +20,7 @@ public class SecurityConfiguration {
     public StubTransformer call() {
         return (name, stub) -> {
             if ("local-grpc-server".equals(name)) {
-                return stub.withCallCredentials(CallCredentialsHelper.authorizationHeader(token));
+                return stub.withCallCredentials(CallCredentialsHelper.bearerAuth(token));
             }
             return stub;
         };

@@ -1,4 +1,4 @@
-auth.token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTY3NzU4MjQ3OCwiZXhwIjoxNjgzNTgyNDc4fQ.I9xK0ZWh1kh0IDyRzgkC-9fZ3mS4fQ5N054KdDrYIRk
+auth.token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTY3NzU4MzYwNiwiZXhwIjoxNjgzNTgzNjA2fQ.GJmtsNIexmoUGAvQYEh0ZHLPz0pmKJlzYo7wXR_eM48
 grpc:
   client:
     local-grpc-server:
