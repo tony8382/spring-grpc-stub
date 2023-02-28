@@ -1,4 +1,4 @@
-package com.lyyang.test.testgrpc;
+package com.lyyang.test.testgrpc.security;
 
 
 import org.springframework.beans.factory.annotation.Value;
