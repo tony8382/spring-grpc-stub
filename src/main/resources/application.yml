@@ -1,11 +1,8 @@
-# auth.username: guest
-auth.username: user
-# auth.username: unknown
-
+auth.token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTY3NzU4MjQ3OCwiZXhwIjoxNjgzNTgyNDc4fQ.I9xK0ZWh1kh0IDyRzgkC-9fZ3mS4fQ5N054KdDrYIRk
 grpc:
   client:
     local-grpc-server:
-      address: 'static://127.0.0.1:9090'
+      address: 'static://127.0.0.1:9190'
       enableKeepAlive: true
       keepAliveWithoutCalls: true
       negotiationType: plaintext

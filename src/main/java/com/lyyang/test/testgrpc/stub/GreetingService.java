@@ -11,8 +11,18 @@ public class GreetingService {
     @GrpcClient("local-grpc-server")
     private GreeterGrpc.GreeterBlockingStub greeterStub;
 
-    public Hello sayHello(String name) {
+    public String sayHello(String name) {
         GreeterProto.HelloReply reply = greeterStub.sayHello(GreeterProto.HelloRequest.newBuilder().setName(name).build());
-        return Hello.builder().message(reply.getMessage()).build();
+        return reply.getMessage();
+    }
+    public String sayHelloAdmin(String name) {
+        GreeterProto.HelloReply reply = greeterStub.sayHelloAdmin(GreeterProto.HelloRequest.newBuilder().setName(name).build());
+        return reply.getMessage();
+    }
+
+    public String auth(String username, String password) {
+        GreeterProto.AuthReply reply = greeterStub.authenticate(GreeterProto.AuthRequest.newBuilder().setUsername(username).setPassword(password).build());
+
+        return reply.getToken();
     }
 }

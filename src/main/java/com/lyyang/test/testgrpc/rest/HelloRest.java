@@ -18,7 +18,7 @@ public class HelloRest {
     }
 
     @GetMapping("hello")
-    public Hello hello(@RequestParam String name) {
+    public String hello(@RequestParam String name) {
         return greetingService.sayHello(name);
     }
 }
